@@ -1,0 +1,69 @@
+/* table {table-layout:fixed}
+td,th {overflow:hidden; white-space:nowrap} */
+
+/* table {table-layout:fixed}
+td,th {overflow:hidden; white-space:nowrap} */
+
+.card {
+    width: 70%;
+    margin: 0 auto !important;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.text-danger {
+    font-size: 12px;
+}

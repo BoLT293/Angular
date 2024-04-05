@@ -1,0 +1,41 @@
+<p-toast position="top-center"></p-toast>
+<div class="card">
+  <div class="card-header">
+    <h2>Employee Management</h2><a class='btn btn-primary' (click)="logout()">LOGOUT</a>
+  </div>
+
+  <div class="card-body">
+    <input type="text" placeholder="Search Employee..." [(ngModel)]="searchQuery">
+    <a class="btn btn-primary" [routerLink]="['/add-emp']">Add Employee</a>
+  </div>
+
+
+
+<div class="container-fluid">
+  <table class="table"> 
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">First</th>
+        <th scope="col">Department</th>
+        <th scope="col">Email</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- <tr *ngFor="let data of details"> -->
+        <tr *ngFor="let data of filterDetails()">
+        <th scope="row">{{data.id}}</th>
+        <td>{{data.firstname}}</td>
+        <td>{{data.departmentname}}</td>
+        <td>{{data.email}}</td>
+        <td>
+          <a href="#" scope="col" class="btn btn-primary" [routerLink]="['/view-emp/'+data.id+'/view']">View</a>
+          <button scope="col" class="btn btn-danger" (click)="deleteemployee(data.id)">Delete</button>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>  
+</div>
